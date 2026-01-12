@@ -1,4 +1,0 @@
-EPITECH entretient un vaste réseau de plusieurs centaines d’entreprises partenaires dans tous les secteurs du numérique : éditeurs de logiciels, ESN, start‑up, grands groupes industriels, banques, assurances et acteurs du e‑commerce.
-Ce réseau inclut à la fois des leaders internationaux et des entreprises régionales innovantes, qui proposent des stages, des alternances, des projets concrets et des offres d’emploi aux étudiants et aux diplômés.
-Les partenariats se traduisent par des collaborations régulières : interventions de professionnels sur les campus, participation à des jurys de projets, organisation de hackathons, parrainage de promotions et soutien à l’entrepreneuriat étudiant.
-Grâce à ces partenaires, les étudiants EPITECH bénéficient d’un accès privilégié au marché de l’emploi tech, avec un fort taux d’embauche dès la fin du cursus et un accompagnement continu dans le développement de leur réseau professionnel.

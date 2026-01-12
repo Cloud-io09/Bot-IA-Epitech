@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EPITECH RAG - Documentation technique</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&family=Space+Grotesk:wght@400;500;600&display=swap"
+    />
+    <style>
+      :root {
+        --ink: #1f1a17;
+        --muted: #5a534e;
+        --sand: #f3eee6;
+        --card: #ffffff;
+        --border: rgba(31, 26, 23, 0.12);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Space Grotesk", "Segoe UI", sans-serif;
+        color: var(--ink);
+        background: linear-gradient(180deg, #fbf3df 0%, #f7efe1 40%, #ecdfd1 100%);
+        padding: 32px;
+      }
+
+      .page {
+        max-width: 980px;
+        margin: 0 auto;
+        background: var(--card);
+        border-radius: 20px;
+        border: 1px solid var(--border);
+        padding: 28px;
+        box-shadow: 0 18px 40px rgba(31, 26, 23, 0.12);
+      }
+
+      header h1 {
+        font-family: "Fraunces", serif;
+        margin: 0 0 8px 0;
+        font-size: clamp(26px, 3vw, 36px);
+      }
+
+      header p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      nav {
+        margin-top: 16px;
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+
+      nav a {
+        color: var(--ink);
+        text-decoration: none;
+        border-bottom: 1px solid rgba(31, 26, 23, 0.25);
+        font-weight: 500;
+      }
+
+      section {
+        margin-top: 28px;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+      }
+
+      h3 {
+        font-size: 1.05rem;
+        margin: 20px 0 8px 0;
+      }
+
+      ul {
+        padding-left: 18px;
+        margin: 0;
+      }
+
+      li {
+        margin-bottom: 8px;
+        line-height: 1.4;
+      }
+
+      code {
+        font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+        background: rgba(31, 26, 23, 0.08);
+        padding: 2px 6px;
+        border-radius: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <header>
+        <h1>Documentation technique</h1>
+        <p>Vue d'ensemble du repo et description des fonctions principales.</p>
+        <nav>
+          <a href="/">Retour au chat</a>
+          <a href="#structure">Structure</a>
+          <a href="#functions">Fonctions</a>
+        </nav>
+      </header>
+
+      <section id="structure">
+        <h2>Structure du repo</h2>
+        <ul>
+          <li><code>backend/app/main.py</code> - API FastAPI (chat + frontend statique).</li>
+          <li><code>backend/app/agent.py</code> - logique de conversation, RAG, garde-fous.</li>
+          <li><code>backend/app/crawler.py</code> - crawl dynamique et sitemap.</li>
+          <li><code>backend/app/rag.py</code> - embeddings, index, recherche, rerank.</li>
+          <li><code>backend/app/indexer.py</code> - CLI pour construire l index.</li>
+          <li><code>frontend/site/index.html</code> - UI du site + chatbot.</li>
+          <li><code>frontend/site/app.js</code> - logique frontend du chat.</li>
+          <li><code>frontend/site/tech-doc.html</code> - cette page.</li>
+          <li><code>backend/requirements.txt</code> - dependances Python.</li>
+          <li><code>README.md</code> - instructions et config.</li>
+        </ul>
+      </section>
+
+      <section id="functions">
+        <h2>Fonctions (resume)</h2>
+
+        <h3>main.py</h3>
+        <ul>
+          <li><code>health()</code> - endpoint de status.</li>
+          <li><code>chat()</code> - endpoint principal /chat.</li>
+        </ul>
+
+        <h3>agent.py</h3>
+        <ul>
+          <li><code>get_index()</code> - charge l index avec cache.</li>
+          <li><code>build_sources()</code> - construit le contexte et les sources.</li>
+          <li><code>detect_smalltalk()</code> - reponses rapides hors RAG.</li>
+          <li><code>is_epitech_related()</code> - detection par mots-cles.</li>
+          <li><code>contains_any()</code> - helper de recherche de mots.</li>
+          <li><code>difficulty_score()</code> - score de complexite.</li>
+          <li><code>is_post_url()</code> - detecte les articles dates.</li>
+          <li><code>is_campus_question()</code> - identifie une question campus.</li>
+          <li><code>is_program_question()</code> - identifie une question programme.</li>
+          <li><code>is_pge_question()</code> - detecte le PGE.</li>
+          <li><code>is_master_specialty_question()</code> - detecte les specialites Masters.</li>
+          <li><code>is_campus_url()</code> - filtre pages campus.</li>
+          <li><code>is_program_url()</code> - filtre pages programme.</li>
+          <li><code>is_pge_url()</code> - detecte la page PGE principale.</li>
+          <li><code>select_campus_candidates()</code> - pool de candidats campus.</li>
+          <li><code>select_program_candidates()</code> - pool de candidats programme.</li>
+          <li><code>select_pge_candidates()</code> - pool pour PGE.</li>
+          <li><code>is_msc_url()</code> - detecte URLs MSc.</li>
+          <li><code>is_mba_url()</code> - detecte URLs MBA.</li>
+          <li><code>clean_title()</code> - nettoie les titres.</li>
+          <li><code>slug_to_title()</code> - transforme un slug en titre.</li>
+          <li><code>collect_master_specialties()</code> - liste MSc/MBA par URLs.</li>
+          <li><code>build_master_specialties_answer()</code> - formatte la reponse masters.</li>
+          <li><code>should_include_history()</code> - decide d inclure le contexte.</li>
+          <li><code>required_term_groups()</code> - groupes de termes requis.</li>
+          <li><code>sources_cover_terms()</code> - verifie les termes dans les sources.</li>
+          <li><code>extract_snippet()</code> - extrait un passage autour d un match.</li>
+          <li><code>extract_pge_answer()</code> - extrait des faits PGE.</li>
+          <li><code>run_agent()</code> - pipeline complet RAG + Ollama.</li>
+        </ul>
+
+        <h3>crawler.py</h3>
+        <ul>
+          <li><code>extract_text()</code> - nettoie le HTML et extrait le texte.</li>
+          <li><code>extract_title()</code> - recupere le titre HTML.</li>
+          <li><code>normalize_url()</code> - normalise une URL.</li>
+          <li><code>should_skip()</code> - ignore les assets non HTML.</li>
+          <li><code>is_allowed()</code> - verifie le domaine autorise.</li>
+          <li><code>collect_links()</code> - extrait les liens internes.</li>
+          <li><code>crawl_site()</code> - crawl BFS avec rate limit.</li>
+          <li><code>fetch_sitemap_urls()</code> - charge les sitemaps.</li>
+          <li><code>parse_sitemap()</code> - parse XML sitemap.</li>
+          <li><code>sitemap_priority()</code> - priorise les sitemaps.</li>
+          <li><code>url_priority()</code> - priorise certaines URLs.</li>
+        </ul>
+
+        <h3>rag.py</h3>
+        <ul>
+          <li><code>normalize_text()</code> - normalise les espaces.</li>
+          <li><code>chunk_text()</code> - decoupe en chunks.</li>
+          <li><code>embed_text()</code> - cree un embedding via Ollama.</li>
+          <li><code>build_index()</code> - genere les chunks + embeddings.</li>
+          <li><code>save_index()</code> - ecrit un index jsonl.</li>
+          <li><code>load_index()</code> - lit un index jsonl.</li>
+          <li><code>cosine_similarity()</code> - calcul de similarite.</li>
+          <li><code>search_index()</code> - retrieval par similarite.</li>
+          <li><code>rerank_results()</code> - rerank via LLM local.</li>
+          <li><code>build_rerank_prompt()</code> - prompt de rerank.</li>
+          <li><code>parse_score_list()</code> - parse des scores JSON.</li>
+          <li><code>shorten()</code> - extrait un snippet court.</li>
+          <li><code>truncate()</code> - tronque un texte long.</li>
+        </ul>
+
+        <h3>indexer.py</h3>
+        <ul>
+          <li><code>parse_args()</code> - arguments CLI.</li>
+          <li><code>main()</code> - crawl + indexation.</li>
+        </ul>
+
+      </section>
+    </main>
+  </body>
+</html>

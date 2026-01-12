@@ -1,7 +1,0 @@
-Les admissions à EPITECH varient selon le programme visé, mais reposent toujours sur l’étude du dossier et un échange personnalisé pour évaluer la motivation et l’adéquation avec la pédagogie par projets.
-Pour le Programme Grande École, les lycéens de terminale peuvent candidater via Parcoursup
-Le dossier scolaire (notes, assiduité, appréciations) est étudié, puis les candidats sont invités à un entretien permettant de vérifier leur intérêt pour l’informatique, leur curiosité et leur capacité à s’investir dans une pédagogie active sans cours magistraux.
-Pour les autres formations (Bachelors spécialisés, Pré‑MSc, MSc Tech & Digital), l’admission se fait en général hors Parcoursup et hors MonMaster.
-Les candidats déposent un dossier comprenant CV, relevés de notes et parfois une lettre de motivation, puis passent un entretien de motivation qui peut être complété par des tests logiques ou des exercices pratiques.
-Dans tous les cas, EPITECH recherche des profils prêts à apprendre en autonomie, à travailler en équipe et à s’engager dans des projets concrets sur la durée.
-Des journées portes ouvertes, des entretiens de découverte et des rendez‑vous individuels avec les équipes admissions sont proposés tout au long de l’année pour accompagner les candidats dans leur orientation.
