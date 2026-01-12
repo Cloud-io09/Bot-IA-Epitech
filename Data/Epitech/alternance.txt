@@ -1,4 +1,0 @@
-L’alternance est un élément clé du cursus EPITECH, en particulier dans les dernières années du Programme Grande École et de certains MSc ou MBA.
-Les étudiants alternent entre périodes en entreprise et périodes à l’école, ce qui leur permet de consolider leurs compétences techniques tout en acquérant une expérience professionnelle significative.
-Les missions en alternance portent généralement sur le développement logiciel, l’administration système et réseau, la cybersécurité, la data ou encore la gestion de projets numériques.
-EPITECH accompagne les étudiants dans leur recherche d’alternance via un réseau d’entreprises partenaires, des ateliers CV/entretiens et des événements de rencontres recruteurs‑étudiants.

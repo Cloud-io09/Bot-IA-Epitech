@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EPITECH Infos</title>
+  <meta name="description" content="Vitrine EPITECH Infos avec un espace dédié à l'intégration d'un chatbot IA." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- HEADER avec images défilantes -->
+  <header class="header" aria-label="En-tête">
+    <div class="header-bg" aria-hidden="true">
+      <div class="header-bg-slide active" style="background-image:url('images/image1.avif');"></div>
+      <div class="header-bg-slide" style="background-image:url('images/image2.avif');"></div>
+      <div class="header-bg-slide" style="background-image:url('images/image3.webp');"></div>
+    </div>
+    <div class="header-overlay" aria-hidden="true"></div>
+
+    <div class="header-inner">
+      <div class="brand">
+        <div class="logo">
+          <img src="images/logo-epitech.png" alt="Logo EPITECH" />
+        </div>
+
+        <div class="brand-text">
+          <div class="brand-title">EPITECH Infos</div>
+          <div class="brand-subtitle">Groupe 11 — MSc</div>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="#sections">Accueil</a>
+        <a href="#chat">Informations</a>
+        <a href="#footer">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO avec images défilantes -->
+    <section class="hero" aria-label="Bannière principale">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-bg-slide active" style="background-image:url('images/image4.jpg');"></div>
+        <div class="hero-bg-slide" style="background-image:url('images/image1.avif');"></div>
+        <div class="hero-bg-slide" style="background-image:url('images/image2.avif');"></div>
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <div class="hero-inner">
+        <div class="hero-content">
+          <h1>Bienvenue chez EPITECH Infos</h1>
+          <p class="hero-text">
+            Découvrez l’essentiel sur EPITECH et utilisez l’espace chatbot pour poser vos questions.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#chat">Formations</a>
+            <a class="btn btn-ghost" href="#sections">Admissions</a>
+          </div>
+        </div>
+
+        <aside class="hero-panel" aria-label="Aperçu rapide">
+          <div class="panel-card">
+            <div class="panel-title">Sommaire</div>
+
+            <div class="panel-list">
+              <div class="panel-item">
+                <span class="dot" aria-hidden="true"></span>
+                <div>
+                  <div class="panel-item-title">Programmes scolaires</div>
+                  <div class="panel-item-sub">Parcours et projets</div>
+                </div>
+              </div>
+
+              <div class="panel-item">
+                <span class="dot" aria-hidden="true"></span>
+                <div>
+                  <div class="panel-item-title">Campus</div>
+                  <div class="panel-item-sub">Infos générales et accès</div>
+                </div>
+              </div>
+
+              <div class="panel-item">
+                <span class="dot" aria-hidden="true"></span>
+                <div>
+                  <div class="panel-item-title">Vie étudiante</div>
+                  <div class="panel-item-sub">Événements et associations</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- SECTIONS -->
+    <section id="sections" class="container" aria-label="Accueil — sections vitrine">
+      <header class="section-head">
+        <h2>La vie à EPITECH</h2>
+        <p class="muted">Découvrez les aspects essentiels de la vie étudiante à EPITECH.</p>
+      </header>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Programmes</h3>
+          <p class="muted">Parcours, projets et approche pédagogique.</p>
+          <ul class="list">
+            <li>Apprentissage par projets</li>
+            <li>Compétences opérationnelles</li>
+            <li>Alternance & professionnalisation</li>
+          </ul>
+          <a class="card-link" href="#">En savoir plus</a>
+        </article>
+
+        <article class="card">
+          <h3>Campus</h3>
+          <p class="muted">Localisation, accès, services.</p>
+          <ul class="list">
+            <li>Paris et autres villes</li>
+            <li>Accès & infrastructures</li>
+            <li>Écosystème étudiant</li>
+          </ul>
+          <a class="card-link" href="#">Voir les campus</a>
+        </article>
+
+        <article class="card">
+          <h3>Projets & Vie Étudiante</h3>
+          <p class="muted">Hackathons, associations et événements.</p>
+          <ul class="list">
+            <li>Hackathons & challenges</li>
+            <li>Associations & clubs</li>
+            <li>Événements internes</li>
+          </ul>
+          <a class="card-link" href="#">Découvrir</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- CHATBOT -->
+    <section id="chat" class="container" aria-label="Informations — chatbot">
+      <header class="section-head">
+        <h2>POSEZ VOS QUESTIONS</h2>
+        <p class="muted">Échangeons ensemble.</p>
+        <a class="doc-link" href="/tech-doc.html">Documentation technique</a>
+      </header>
+
+      <div class="chat-shell card">
+        <div class="chat-header">
+          <div class="chat-title">
+            <img src="images/logo-AE.png" alt="AE" class="chat-logo" />
+            Assistant EPITECH
+          </div>
+        </div>
+
+        <div class="chat-window" id="chat-window" aria-label="Conversation (statique)">
+          <div class="msg msg-bot">
+            <div class="avatar">
+              <img src="images/logo-AE.png" alt="Assistant EPITECH" />
+            </div>
+            <div class="bubble">
+              Bonjour. Je suis l’assistant EPITECH. Posez-moi une question sur les programmes, les campus ou la vie étudiante.
+            </div>
+          </div>
+
+          <div id="message-container">
+          
+          </div>
+        </div>
+
+        <form class="chat-form" id="chat-form" aria-label="Saisie">
+          <input type="text" placeholder="Posez votre question…" />
+          <button class="btn btn-primary" type="submit">Envoyer</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="footer" class="footer">
+    <div class="footer-content">
+      <div>
+        <div class="footer-title">EPITECH Infos</div>
+        <div class="muted">Groupe 11 — MSc</div>
+      </div>
+      <div class="footer-links">
+        <a href="javascript:void(0)" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="javascript:void(0)" target="_blank" rel="noopener noreferrer">Twitter</a>
+        <a href="javascript:void(0)" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

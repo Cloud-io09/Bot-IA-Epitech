@@ -1,4 +1,0 @@
-EPITECH dispose d’un réseau de 15 campus en France et plusieurs implantations en Europe, ce qui permet de suivre la même pédagogie dans des contextes économiques locaux variés.
-Parmi les campus français, on peut citer : Paris, Bordeaux, Lille, Lyon, Marseille, Montpellier, Nancy, Nantes, Nice, Rennes, Strasbourg, Toulouse, Mulhouse, Moulins et La Réunion.
-Chaque campus est implanté au cœur de son écosystème numérique : technopoles (Sophia Antipolis pour Nice, KMØ pour Mulhouse), pôles French Tech (Montpellier, Rennes, Bordeaux, Lyon…), ou quartiers d’affaires fortement tournés vers le digital.
-La vie sur les campus est rythmée par des projets, des hackathons, des conférences et des événements organisés avec les entreprises locales, ce qui favorise l’intégration professionnelle des étudiants dès leurs premières années à EPITECH.
